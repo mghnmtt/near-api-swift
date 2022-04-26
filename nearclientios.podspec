@@ -15,8 +15,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'nearclientios/Sources/**/*'
-  s.swift_versions   = ["5.0"]
-
+  
   s.dependency 'TweetNacl'
   s.dependency 'KeychainAccess'
   s.dependency 'Base58Swift'
