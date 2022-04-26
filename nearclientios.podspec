@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'nearclientios_Onto'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Swift SDK to interact with NEAR Protocol'
 
   s.description      = <<-DESC
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/nearprotocol/near-client-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dmitrykurochka' => 'v.i.p.dimak@gmail.com' }
-  s.source           = { :git => 'https://github.com/nearprotocol/near-client-ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mghnmtt/near-api-swift.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/nearprotocol'
 
   s.ios.deployment_target = '13.0'
