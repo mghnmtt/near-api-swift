@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/nearprotocol/near-client-ios.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/nearprotocol'
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'nearclientios/Sources/**/*'
   s.swift_versions   = ["5.0"]
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.dependency 'TweetNacl', '~> 1.0'
   s.dependency 'KeychainAccess', '~> 4.2.2'
   s.dependency 'Base58Swift', '~> 2.1.10'
+  s.dependency 'BigInt', '~> 5.2.0'
   s.dependency 'secp256k1.swift'
   s.dependency 'AnyCodable-FlightSchool', '~> 0.6.0'
 end
