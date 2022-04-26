@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'nearclientios'
+  s.name             = 'nearclientios_Onto'
   s.version          = '1.0.0'
   s.summary          = 'Swift SDK to interact with NEAR Protocol'
 
@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
   s.source_files = 'nearclientios/Sources/**/*'
   s.swift_versions   = ["5.0"]
 
-  s.dependency 'TweetNacl', '~> 1.0'
-  s.dependency 'KeychainAccess', '~> 4.2.2'
-  s.dependency 'Base58Swift', '~> 2.1.10'
-  s.dependency 'BigInt', '~> 5.2.0'
+  s.dependency 'TweetNacl'
+  s.dependency 'KeychainAccess'
+  s.dependency 'Base58Swift'
+  s.dependency 'BigInt'
   s.dependency 'secp256k1.swift'
   s.dependency 'AnyCodable-FlightSchool', '~> 0.6.0'
 end
