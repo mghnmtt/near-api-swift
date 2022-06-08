@@ -214,7 +214,7 @@ public final class Account {
   }
 
   @discardableResult
-  func sendMoney(receiverId: String, amount: UInt128) async throws -> FinalExecutionOutcome {
+  public func sendMoney(receiverId: String, amount: UInt128) async throws -> FinalExecutionOutcome {
     return try await signAndSendTransaction(receiverId: receiverId, actions: [nearclientios.transfer(deposit: amount)])
   }
 
