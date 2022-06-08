@@ -238,7 +238,7 @@ public final class Account {
     return try await signAndSendTransaction(receiverId: accountId, actions: [nearclientios.deployContract(code: data)])
   }
 
-  func functionCall(contractId: String, methodName: ChangeMethod, args: [String: Any] = [:],
+  public func functionCall(contractId: String, methodName: ChangeMethod, args: [String: Any] = [:],
                             gas: UInt64?, amount: UInt128) async throws -> FinalExecutionOutcome {
     let gasValue = gas ?? DEFAULT_FUNC_CALL_AMOUNT
     let actions = [nearclientios.functionCall(methodName: methodName, args: Data(json: args).bytes,
@@ -270,7 +270,7 @@ public final class Account {
                                       actions: [nearclientios.stake(stake: amount, publicKey: publicKey)])
   }
 
-  func viewFunction<T: Decodable>(contractId: String, methodName: String, args: [String: Any] = [:]) async throws -> T {
+  public func viewFunction<T: Decodable>(contractId: String, methodName: String, args: [String: Any] = [:]) async throws -> T {
     let data = Data(json: args).base64EncodedString()
     let result: QueryResult = try await connection.provider.query(params: [
       "request_type": "call_function",
